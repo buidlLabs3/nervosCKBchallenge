@@ -1,0 +1,53 @@
+Script started on 2026-06-04 14:44:07+03:00 [COMMAND="env PATH=/home/core/.cargo/bin:/home/core/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin npm run test:only -- anchor-note.mock.test.ts" <not executed on terminal>]
+
+> nervos-anchor-quest@0.1.0 test:only
+> jest anchor-note.mock.test.ts
+
+[999D[K  console.log
+    
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Run result: 0
+    ║ All cycles: 539
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ 
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/ckb-testtool/dist.commonjs/unittest/core.js:106:17)
+
+[999D[K  console.log
+    
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: output type script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] anchor note accepted script args: "0x0000414eeca4ee948383ce741516f411ddaf988825c37d4cdff07225d4131aa6f410040000000000000000000000000000000000000000000000000000000000000000"
+    ║ Run result: 0
+    ║ All cycles: 13618378(13.0M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ 
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/ckb-testtool/dist.commonjs/unittest/core.js:106:17)
+
+(node:203507) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/anchor-note.mock.test.ts (6.04 s)
+  anchor-note reserve contract
+    ✓ accepts a marked anchor note cell (638 ms)
+
+[999D[KTest Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        6.255 s, estimated 12 s
+Ran all test suites matching /anchor-note.mock.test.ts/i.
+
+Script done on 2026-06-04 14:44:17+03:00 [COMMAND_EXIT_CODE="0"]

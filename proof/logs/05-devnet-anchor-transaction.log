@@ -1,0 +1,21 @@
+Script started on 2026-06-04 14:40:19+03:00 [COMMAND="env PRIVATE_KEY=<local-offckb-devnet-key> PATH=/home/core/.cargo/bin:/home/core/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin npm run test:only -- anchor-note.devnet.test.ts" <not executed on terminal>]
+
+> nervos-anchor-quest@0.1.0 test:only
+> jest anchor-note.devnet.test.ts
+
+[999D[K  console.log
+    Anchor note transaction sent: 0x5e58f3c9eb5b7c166ddcc4c4075831c564449b247acd15ef93da044c80c25013
+
+      at Object.<anonymous> (tests/anchor-note.devnet.test.ts:60:13)
+
+PASS tests/anchor-note.devnet.test.ts (9.815 s)
+  anchor-note reserve contract
+    ✓ creates a marked anchor note cell on devnet (573 ms)
+
+[999D[KTest Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        10.045 s
+Ran all test suites matching /anchor-note.devnet.test.ts/i.
+
+Script done on 2026-06-04 14:40:33+03:00 [COMMAND_EXIT_CODE="0"]

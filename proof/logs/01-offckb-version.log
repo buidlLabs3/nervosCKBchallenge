@@ -1,0 +1,5 @@
+Script started on 2026-06-04 14:42:29+03:00 [COMMAND="offckb --version" <not executed on terminal>]
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+0.4.6
+
+Script done on 2026-06-04 14:42:30+03:00 [COMMAND_EXIT_CODE="0"]

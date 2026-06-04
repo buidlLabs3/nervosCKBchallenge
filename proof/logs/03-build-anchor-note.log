@@ -1,0 +1,19 @@
+Script started on 2026-06-04 14:43:11+03:00 [COMMAND="env PATH=/home/core/.cargo/bin:/home/core/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin npm run build" <not executed on terminal>]
+
+> nervos-anchor-quest@0.1.0 build
+> node scripts/build-all.js
+
+Building 1 contract(s): anchor-note
+
+📦 Building contract: anchor-note
+Building anchor-note from contracts/anchor-note/src/index.ts...
+  📦 Bundling with esbuild with release settings...
+  🔧 Compiling to bytecode...
+  ✅ Contract 'anchor-note' built successfully!
+     📄 JavaScript: dist/anchor-note.js
+     🔗 Bytecode: dist/anchor-note.bc
+✅ Successfully built: anchor-note with release version
+
+🎉 All contracts built successfully!
+
+Script done on 2026-06-04 14:43:14+03:00 [COMMAND_EXIT_CODE="0"]

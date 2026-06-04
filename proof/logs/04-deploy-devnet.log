@@ -1,0 +1,45 @@
+Script started on 2026-06-04 14:39:40+03:00 [COMMAND="env PATH=/home/core/.cargo/bin:/home/core/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin npm run deploy -- --yes" <not executed on terminal>]
+
+> nervos-anchor-quest@0.1.0 deploy
+> node scripts/deploy.js --yes
+
+🚀 Deploying 1 contract(s): anchor-note
+   📁 Target: dist
+   📄 Output: deployment
+   🌐 Network: devnet
+
+🚀 Deploying contracts...
+💻 Running: offckb deploy --network devnet --target dist --output deployment --yes
+🖥️  Platform: linux
+
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+🚀 Preparing to deploy 1 contract(s):
+   📄 anchor-note.bc
+
+   📁 Deployment artifacts will be saved to: /home/core/Desktop/CKB/NervosCKBchallenge/nervos-anchor-quest/deployment
+   🌐 Network: devnet
+   🔑 Using default private key
+   🔄 Type ID: disabled (immutable)
+contract anchor-note.bc deployed, tx hash: 0x3f337f4b27a1dbf040f1247fa4a5eefe81a986c0ac773dbaf243b0ff57e6e3cc
+wait for tx confirmed on-chain...
+tx committed.
+
+📦 Saving deployment artifacts for 1 contract(s)...
+- 📄 Saving artifacts for anchor-note.bc...
+- anchor-note.bc deployment.toml file /home/core/Desktop/CKB/NervosCKBchallenge/nervos-anchor-quest/deployment/devnet/anchor-note.bc/deployment.toml generated successfully.
+- Migration json file /home/core/Desktop/CKB/NervosCKBchallenge/nervos-anchor-quest/deployment/devnet/anchor-note.bc/migrations/2026-06-04-144000.json generated successfully.
+- ✅ Successfully saved artifacts for anchor-note.bc
+- 📄 Script info file generated: /home/core/Desktop/CKB/NervosCKBchallenge/nervos-anchor-quest/deployment/scripts.json
+
+🎉 All deployment artifacts saved successfully!
+Deploy process exited with code: 0
+
+✅ Successfully deployed all contracts!
+🎉 Deployment completed successfully!
+📁 Deployment artifacts saved to: deployment/
+
+💡 Next steps:
+   - Check the deployment artifacts in the deployment/ folder
+   - Run your tests to use the deployed contract scripts
+
+Script done on 2026-06-04 14:40:00+03:00 [COMMAND_EXIT_CODE="0"]

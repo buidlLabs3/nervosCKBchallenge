@@ -1,0 +1,17 @@
+Second CKB campaign devnet RPC confirmation
+
+Network: local OffCKB devnet via http://127.0.0.1:28114
+Contract: anchor-note.bc
+Deployment tx: 0x3f337f4b27a1dbf040f1247fa4a5eefe81a986c0ac773dbaf243b0ff57e6e3cc
+Deployment status: committed
+Deployment block: 0x17a5
+Contract code hash: 0x414eeca4ee948383ce741516f411ddaf988825c37d4cdff07225d4131aa6f410
+Contract hash type: data2
+
+Anchor note tx: 0x5e58f3c9eb5b7c166ddcc4c4075831c564449b247acd15ef93da044c80c25013
+Anchor note status: committed
+Anchor note block: 0x17af
+Anchor output capacity: 0x59682f000
+Anchor output data: 0x434b425f4348414c4c454e47455f414e43484f525f56322d7365636f6e642d7265706f2d6465766e65742d70726f6f66
+
+Marker ASCII: CKB_CHALLENGE_ANCHOR_V2-second-repo-devnet-proof
