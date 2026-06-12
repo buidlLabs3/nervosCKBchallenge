@@ -1,0 +1,6 @@
+$ offckb --version
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+0.4.6
+
+$ get_tip_block_number via OffCKB RPC
+{"jsonrpc":"2.0","result":"0x1924","id":1}

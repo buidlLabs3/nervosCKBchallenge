@@ -1,0 +1,20 @@
+Campaign #02 Store Data on Cell - RPC/live-cell summary
+
+Account: buidlLabs3
+Network: OffCKB local devnet
+RPC: http://127.0.0.1:28114
+Tutorial: https://docs.nervos.org/docs/dapp/store-data-on-cell
+
+Message: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.
+Encoded hex: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Decoded preview: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.
+
+Transaction hash: 0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4
+Out point: 0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4:0x0
+Transaction status: committed
+Block number: 0x1929
+
+Live cell status: live
+Live cell capacity: 0x3a1d51c00
+Live cell data hex: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Live cell decoded: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.

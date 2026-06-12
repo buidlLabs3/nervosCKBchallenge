@@ -59,3 +59,16 @@ offckb node
 Devnet here means the local OffCKB chain running on my machine. It is private to the local environment, resets easily, and is meant for fast contract development. Testnet is a shared public CKB network, so public explorers can index it.
 
 Because this was deployed on local OffCKB devnet, the transaction hashes will not show up on mainnet or testnet explorers. The proof is the local RPC confirmation, deployment artifacts, logs, and screenshots in this repo.
+
+## Build on CKB Campaign #02
+
+Campaign #02 completes the official [Store Data on Cell](https://docs.nervos.org/docs/dapp/store-data-on-cell) tutorial on local OffCKB devnet.
+
+Proof folder: [campaign-02-proof](campaign-02-proof/README.md)
+
+- Transaction hash: `0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4`
+- Out point: `0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4:0x0`
+- Live cell status: `live`
+- Stored message decoded from cell data: `buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.`
+
+The tutorial script is in [nervos-anchor-quest/campaign-02-store-data/store-data-on-cell.mjs](nervos-anchor-quest/campaign-02-store-data/store-data-on-cell.mjs).

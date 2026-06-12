@@ -1,0 +1,44 @@
+
+> nervos-anchor-quest@0.1.0 campaign02:store-data
+> node campaign-02-store-data/store-data-on-cell.mjs
+
+Build on CKB Campaign #02 - Store Data on Cell
+Account label: buidlLabs3
+RPC endpoint: http://127.0.0.1:28114
+Tutorial source: https://docs.nervos.org/docs/dapp/store-data-on-cell
+Devnet tip before send: 0x1926
+
+Step 1 - Encode and decode message
+Original UTF-8 message: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.
+Encoded hex: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Decoded preview: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.
+
+Step 2 - Build transaction with data in outputsData[0]
+Recipient lock args: 0x8e42b1999f265a0078503c4acec4d5e134534297
+Transaction template outputs: 1
+Transaction template outputsData[0]: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Completed tx inputs: 1
+Completed tx outputs: 2
+Completed tx outputsData count: 2
+Completed first output capacity: 15600000000
+Transaction sent: 0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4
+
+Step 3 - Wait for commit and retrieve Live Cell data
+  poll 1: pending
+  poll 2: pending
+  poll 3: pending
+  poll 4: pending
+  poll 5: pending
+  poll 6: proposed
+  poll 7: proposed
+  poll 8: proposed
+  poll 9: committed
+Committed block: 0x1929
+Out point: 0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4:0x0
+Live cell status: live
+Live cell capacity: 0x3a1d51c00
+Live cell data hex: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Live cell decoded message: buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.
+
+Saved proof JSON: /home/core/Desktop/CKB/NervosCKBchallenge/campaign-02-proof/store-data-result.json
+Tutorial completed: encoded, sent, committed, retrieved, and decoded live cell data.

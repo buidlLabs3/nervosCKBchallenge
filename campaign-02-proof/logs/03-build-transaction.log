@@ -1,0 +1,9 @@
+Step 2 - Build transaction with data in outputsData[0]
+Recipient lock args: 0x8e42b1999f265a0078503c4acec4d5e134534297
+Transaction template outputs: 1
+Transaction template outputsData[0]: 0x627569646c4c616273332043616d706169676e2030323a20746869732063656c6c2063617272696573206120736d616c6c206e6f74652c20616e6420746865206f757420706f696e74206265636f6d65732074686520626f6f6b6d61726b2e
+Completed tx inputs: 1
+Completed tx outputs: 2
+Completed tx outputsData count: 2
+Completed first output capacity: 15600000000
+Transaction sent: 0x530512a027647413f1630f3807f8a02e4c33a43b99db997885d933ef44abcbe4
