@@ -1,4 +1,4 @@
-# Build on CKB Campaign #02 Proof - buidlLabs3
+# Campaign 2 Proof
 
 Tutorial completed: [Store Data on Cell](https://docs.nervos.org/docs/dapp/store-data-on-cell)
 
