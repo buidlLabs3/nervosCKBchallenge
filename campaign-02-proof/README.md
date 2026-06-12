@@ -25,11 +25,11 @@ This proof shows the three required parts of the tutorial:
 
 ## Screenshots
 
-1. [OffCKB devnet setup](screenshots/01-devnet-setup.png)
-2. [Encode and decode message](screenshots/02-encode-decode-message.png)
-3. [Build transaction with outputsData](screenshots/03-build-transaction.png)
-4. [Retrieve live cell data](screenshots/04-retrieve-live-cell-data.png)
-5. [Final result summary](screenshots/05-result-summary.png)
+1. [OffCKB devnet setup](screenshots/nervosckbchallenge-01-devnet-setup.png)
+2. [Encode and decode message](screenshots/nervosckbchallenge-02-encode-decode-message.png)
+3. [Build transaction with outputsData](screenshots/nervosckbchallenge-03-build-transaction.png)
+4. [Retrieve live cell data](screenshots/nervosckbchallenge-04-retrieve-live-cell-data.png)
+5. [Final result summary](screenshots/nervosckbchallenge-05-result-summary.png)
 
 ## Logs
 
