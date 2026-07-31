@@ -1,0 +1,5 @@
+Script started on 2026-07-31 11:39:15+03:00 [COMMAND="offckb deposit --network devnet ckt1qzkymvxscq5t5rtnmmy7uhn28sxf3lxle2y4gq4r9pwksr5kfh95vqgqqp3uzyqh7t7x54vmt8vevkak2zj7sg7gfkj0urefhmpwfc058jyvuppah903y0fyvnuffulax4t0hfv3fazspya38dvxp3um590hvantqvfzsu6t 300" <not executed on terminal>]
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+tx hash:  0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43
+
+Script done on 2026-07-31 11:39:16+03:00 [COMMAND_EXIT_CODE="0"]

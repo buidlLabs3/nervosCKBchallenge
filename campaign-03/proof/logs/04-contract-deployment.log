@@ -1,0 +1,57 @@
+Script started on 2026-07-31 09:55:13+03:00 [COMMAND="CKB_RPC_URL=http://127.0.0.1:28114 pnpm deploy -- --yes" <not executed on terminal>]
+ ERR_PNPM_NOTHING_TO_DEPLOY  No project was selected for deployment
+
+Script done on 2026-07-31 09:55:14+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-07-31 09:59:54+03:00 [COMMAND="CKB_RPC_URL=http://127.0.0.1:28114 pnpm run deploy -- --yes" <not executed on terminal>]
+
+> buidllabs3-simple-lock-lab@0.1.0 deploy /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> node scripts/build-all.js && node scripts/deploy.js -- --yes
+
+Building 1 contract(s): hash-lock
+
+📦 Building contract: hash-lock
+Building hash-lock from contracts/hash-lock/src/index.ts...
+  📦 Bundling with esbuild...
+  🔧 Compiling to bytecode...
+  ✅ Contract 'hash-lock' built successfully!
+     📄 JavaScript: dist/hash-lock.js
+     🔗 Bytecode: dist/hash-lock.bc
+✅ Successfully built: hash-lock
+
+🎉 All contracts built successfully!
+🚀 Deploying contracts...
+   📁 Target: dist
+   📄 Output: deployment
+   🌐 Network: devnet
+
+💻 Running: offckb deploy --network devnet --target dist --output deployment --yes
+
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+🚀 Preparing to deploy 1 contract(s):
+   📄 hash-lock.bc
+
+   📁 Deployment artifacts will be saved to: /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/deployment
+   🌐 Network: devnet
+   🔑 Using default private key
+   🔄 Type ID: disabled (immutable)
+contract hash-lock.bc deployed, tx hash: 0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc
+wait for tx confirmed on-chain...
+tx committed.
+
+📦 Saving deployment artifacts for 1 contract(s)...
+- 📄 Saving artifacts for hash-lock.bc...
+- hash-lock.bc deployment.toml file /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/deployment/devnet/hash-lock.bc/deployment.toml generated successfully.
+- Migration json file /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/deployment/devnet/hash-lock.bc/migrations/2026-07-31-100021.json generated successfully.
+- ✅ Successfully saved artifacts for hash-lock.bc
+- 📄 Script info file generated: /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/deployment/scripts.json
+
+🎉 All deployment artifacts saved successfully!
+
+🎉 Deployment completed successfully!
+📁 Deployment artifacts saved to: deployment/
+
+💡 Next steps:
+   - Check the deployment artifacts in the deployment/ folder
+   - Run your tests to use the deployed contract scripts
+
+Script done on 2026-07-31 10:00:21+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,13 @@
+Script started on 2026-07-31 10:17:59+03:00 [COMMAND="CKB_RPC_URL=http://127.0.0.1:28114 node scripts/collect-environment.mjs" <not executed on terminal>]
+Build on CKB Campaign 03 - Environment
+Account: buidlLabs3
+Network: OffCKB local devnet
+Node.js: v22.18.0
+pnpm: 10.24.0
+Git: git version 2.43.0
+OffCKB: 0.4.6
+RPC: http://127.0.0.1:28114
+RPC tip: 0x3db8
+Deployment status: committed
+
+Script done on 2026-07-31 10:18:01+03:00 [COMMAND_EXIT_CODE="0"]

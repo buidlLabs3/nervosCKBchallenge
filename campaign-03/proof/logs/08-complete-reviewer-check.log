@@ -1,0 +1,266 @@
+Script started on 2026-07-31 11:47:40+03:00 [COMMAND="pnpm verify:submission" <not executed on terminal>]
+
+> buidllabs3-simple-lock-lab@0.1.0 verify:submission /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> pnpm build && pnpm test:mock && pnpm --filter frontend typecheck && pnpm --filter frontend build && pnpm verify:offline && pnpm verify:integrity
+
+
+> buidllabs3-simple-lock-lab@0.1.0 build /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> node scripts/build-all.js
+
+Building 1 contract(s): hash-lock
+
+📦 Building contract: hash-lock
+Building hash-lock from contracts/hash-lock/src/index.ts...
+  📦 Bundling with esbuild...
+  🔧 Compiling to bytecode...
+  ✅ Contract 'hash-lock' built successfully!
+     📄 JavaScript: dist/hash-lock.js
+     🔗 Bytecode: dist/hash-lock.bc
+✅ Successfully built: hash-lock
+
+🎉 All contracts built successfully!
+
+> buidllabs3-simple-lock-lab@0.1.0 test:mock /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> jest tests/hash-lock.mock.test.ts --runInBand
+
+[999D[K  console.error
+    Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+
+    > 1 | import {
+        | ^
+      2 |   hexFrom,
+      3 |   Transaction,
+      4 |   hashTypeToBytes,
+
+      at Object.<anonymous> (node_modules/.pnpm/secp256k1@3.8.1/node_modules/secp256k1/index.js:6:13)
+      at Object.<anonymous> (node_modules/.pnpm/bitcoinjs-message@2.2.0/node_modules/bitcoinjs-message/index.js:5:19)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/doge/verify.js:5:29)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/signer/index.js:7:21)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/btc/signerBtc.js:10:20)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/btc/index.js:17:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/index.js:17:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/barrel.js:28:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/index.js:30:14)
+      at Object.<anonymous> (tests/hash-lock.mock.test.ts:1:1)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [DEBUG] Preimage accepted
+    ║ Run result: 0
+    ║ All cycles: 13120133(12.5M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1893392) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [ERROR] The witness preimage does not match the expected hash
+    ║ Run result: 11
+    ║ All cycles: 13103352(12.5M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1893651) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [ERROR] The witness lock field must contain a preimage
+    ║ Run result: 10
+    ║ All cycles: 13020379(12.4M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1893780) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x580000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0423000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce04"
+    ║ Script log: [ERROR] Expected 67 argument bytes, received 35
+    ║ Run result: 12
+    ║ All cycles: 12725811(12.1M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1894039) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+PASS tests/hash-lock.mock.test.ts (10.852 s)
+  hash-lock contract
+    ✓ accepts the exact UTF-8 preimage (2068 ms)
+    ✓ rejects a different preimage with exit code 11 (1957 ms)
+    ✓ rejects an empty witness lock with exit code 10 (1988 ms)
+    ✓ rejects missing hash bytes with exit code 12 (2122 ms)
+
+[999D[KTest Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        10.994 s, estimated 21 s
+Ran all test suites matching /tests\/hash-lock.mock.test.ts/i.
+
+> frontend@0.1.0 typecheck /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/frontend
+> tsc --noEmit --incremental false
+
+
+> frontend@0.1.0 build /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/frontend
+> next build
+
+   ▲ Next.js 15.5.18
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 3.6s
+   Linting and checking validity of types     ✓ Linting and checking validity of types
+   Collecting page data     ✓ Collecting page data
+ ✓ Generating static pages (5/5)
+   Collecting build traces     ✓ Collecting build traces
+   Finalizing page optimization     ✓ Finalizing page optimization
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                     149 kB         250 kB
+└ ○ /_not-found                            995 B         102 kB
++ First Load JS shared by all             101 kB
+  ├ chunks/897-63fd7ae13372c92e.js       45.2 kB
+  ├ chunks/affce599-aef76314bfbf0ff8.js  54.2 kB
+  └ other shared chunks (total)          1.94 kB
+
+
+○  (Static)  prerendered as static content
+
+
+> buidllabs3-simple-lock-lab@0.1.0 verify:offline /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> node scripts/verify-campaign-03-offline.mjs
+
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+Build on CKB Campaign 03 - Offline Proof Verified
+Checks: 47 transaction invariants passed
+Portable evidence SHA-256: 901376a13fff56d0384b1ab111027a4bf4724cd3724083eaf374ffe29fa650c3
+Bytecode SHA-256: 22c8820bce3a954378689f9985a869949ba62ce851d3f2844da3321dd5f829d2
+Bytecode CKB hash: 0x63c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce
+Deployment: 0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc / committed
+Deposit: 0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43 / 300 CKB
+Unlock: 0xc40a60c7556272b5cd79d9de13e9dda9b43bb7b5eb2b9f7401b8fe9075399dea / committed
+Outputs: 99 CKB recipient / 200.99999 CKB hash-lock change
+No RPC connection was used; verification read only checked-in artifacts.
+
+> buidllabs3-simple-lock-lab@0.1.0 verify:integrity /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> sha256sum --check ../proof/SHA256SUMS
+
+../README.md: OK
+../TASKS.md: OK
+../proof/README.md: OK
+../proof/campaign-03-result.json: OK
+../proof/logs/01-environment.log: OK
+../proof/logs/02-contract-build.log: OK
+../proof/logs/03-contract-vm-tests.log: OK
+../proof/logs/03-frontend-production-build.log: OK
+../proof/logs/03-frontend-typecheck.log: OK
+../proof/logs/04-contract-deployment.log: OK
+../proof/logs/05-hash-lock-deposit.log: OK
+../proof/logs/06-rpc-proof-verification.log: OK
+../proof/logs/07-offline-proof-verification.log: OK
+../proof/reflection-notes.md: OK
+../proof/rpc-evidence.json: OK
+../proof/screenshots/01-offckb-environment.png: OK
+../proof/screenshots/02-contract-build-and-tests.png: OK
+../proof/screenshots/03-deployment-and-rpc.png: OK
+../proof/screenshots/04-funded-workbench.png: OK
+../proof/screenshots/05-wrong-witness-rejected.png: OK
+../proof/screenshots/06-correct-witness-committed.png: OK
+../proof/screenshots/07-mobile-committed.png: OK
+../proof/screenshots/08-capacity-aware-retry.png: OK
+../proof/screenshots/README.md: OK
+../proof/submission-helper.md: OK
+./.env.example: OK
+./.gitignore: OK
+./README.md: OK
+./UPSTREAM.md: OK
+./contracts/hash-lock/src/index.ts: OK
+./deployment/README.md: OK
+./deployment/devnet/hash-lock.bc/deployment.toml: OK
+./deployment/devnet/hash-lock.bc/migrations/2026-07-31-100021.json: OK
+./deployment/scripts.json: OK
+./deployment/system-scripts.json: OK
+./dist/hash-lock.bc: OK
+./frontend/.env.example: OK
+./frontend/.eslintrc.json: OK
+./frontend/.gitignore: OK
+./frontend/README.md: OK
+./frontend/app/ccc-client.ts: OK
+./frontend/app/favicon.ico: OK
+./frontend/app/globals.css: OK
+./frontend/app/hash-lock.ts: OK
+./frontend/app/layout.tsx: OK
+./frontend/app/page.tsx: OK
+./frontend/deployment/README.md: OK
+./frontend/deployment/scripts.json: OK
+./frontend/deployment/system-scripts.json: OK
+./frontend/next.config.mjs: OK
+./frontend/package.json: OK
+./frontend/postcss.config.mjs: OK
+./frontend/public/next.svg: OK
+./frontend/public/vercel.svg: OK
+./frontend/tailwind.config.ts: OK
+./frontend/tsconfig.json: OK
+./jest.config.cjs: OK
+./package.json: OK
+./pnpm-lock.yaml: OK
+./pnpm-workspace.yaml: OK
+./scripts/add-contract.js: OK
+./scripts/build-all.js: OK
+./scripts/build-contract.js: OK
+./scripts/campaign-03-proof-core.mjs: OK
+./scripts/collect-environment.mjs: OK
+./scripts/deploy.js: OK
+./scripts/render-proof-screenshots.mjs: OK
+./scripts/verify-campaign-03-offline.mjs: OK
+./scripts/verify-campaign-03.mjs: OK
+./tests/hash-lock.devnet.test.ts: OK
+./tests/hash-lock.mock.test.ts: OK
+./tests/helper.ts: OK
+./tsconfig.base.json: OK
+./tsconfig.json: OK
+
+Script done on 2026-07-31 11:48:26+03:00 [COMMAND_EXIT_CODE="0"]

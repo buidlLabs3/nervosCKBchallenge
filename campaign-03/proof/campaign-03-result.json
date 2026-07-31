@@ -1,0 +1,160 @@
+{
+  "campaign": "Build on CKB: Campaign #03",
+  "account": "buidlLabs3",
+  "tutorial": "Build a Simple Lock",
+  "tutorialUrl": "https://docs.nervos.org/docs/dapp/simple-lock",
+  "upstream": {
+    "repository": "https://github.com/nervosnetwork/docs.nervos.org",
+    "revision": "522700df909373fb824c4bec07ca7b1acac77053"
+  },
+  "network": "OffCKB local devnet",
+  "rpcUrl": "http://127.0.0.1:28114",
+  "contract": {
+    "name": "hash-lock",
+    "source": "campaign-03/simple-lock-lab/contracts/hash-lock/src/index.ts",
+    "bytecode": "campaign-03/simple-lock-lab/dist/hash-lock.bc",
+    "bytecodeSha256": "22c8820bce3a954378689f9985a869949ba62ce851d3f2844da3321dd5f829d2",
+    "bytecodeCkbHash": "0x63c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce",
+    "deploymentTxHash": "0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc",
+    "deploymentStatus": "committed",
+    "deploymentBlockNumber": "0x3ce4",
+    "codeHash": "0x63c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce",
+    "hashType": "data2",
+    "cellDep": {
+      "outPoint": {
+        "txHash": "0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc",
+        "index": 0
+      },
+      "depType": "code"
+    },
+    "deploymentOutputIndex": 0,
+    "deploymentOutputDataMatchesBytecode": true
+  },
+  "hashLock": {
+    "preimage": "amber vault opens at sunrise",
+    "preimageUtf8Hex": "0x616d626572207661756c74206f70656e732061742073756e72697365",
+    "ckbBlake2b256": "0x3db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03",
+    "address": "ckt1qzkymvxscq5t5rtnmmy7uhn28sxf3lxle2y4gq4r9pwksr5kfh95vqgqqp3uzyqh7t7x54vmt8vevkak2zj7sg7gfkj0urefhmpwfc058jyvuppah903y0fyvnuffulax4t0hfv3fazspya38dvxp3um590hvantqvfzsu6t",
+    "lockScript": {
+      "args": "0x000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03",
+      "code_hash": "0xac4db0d0c028ba0d73dec9ee5e6a3c0c98fcdfca895402a3285d680e964dcb46",
+      "hash_type": "type"
+    }
+  },
+  "deposit": {
+    "txHash": "0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43",
+    "txStatus": "committed",
+    "blockNumber": "0x4189",
+    "outputIndex": "0x0",
+    "capacity": "0x6fc23ac00",
+    "capacityCkb": "300",
+    "postUnlockLiveCellStatus": "unknown"
+  },
+  "rejectedAttempt": {
+    "preimage": "amber vault opens at sunset",
+    "scriptErrorCode": 11,
+    "observedInProductionFrontend": true,
+    "evidence": "campaign-03/proof/screenshots/05-wrong-witness-rejected.png",
+    "note": "The devnet rejected the mismatched witness before transaction admission, so it has no committed transaction hash."
+  },
+  "unlock": {
+    "txHash": "0xc40a60c7556272b5cd79d9de13e9dda9b43bb7b5eb2b9f7401b8fe9075399dea",
+    "txStatus": "committed",
+    "blockNumber": "0x4191",
+    "input": {
+      "index": "0x0",
+      "tx_hash": "0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43"
+    },
+    "witness": "0x300000001000000030000000300000001c000000616d626572207661756c74206f70656e732061742073756e72697365",
+    "witnessContainsPreimage": true,
+    "witnessIsCanonical": true,
+    "recipient": {
+      "address": "ckt1qzda0cr08m85hc8jlnfp3zer7xulejywt49kt2rr0vthywaa50xwsqt435c3epyrupszm7khk6weq5lrlyt52lg48ucew",
+      "outputIndex": "0x0",
+      "capacity": "0x24e160300",
+      "capacityCkb": "99",
+      "lockMatchesAddress": true,
+      "liveCellStatus": "live"
+    },
+    "change": {
+      "address": "ckt1qzkymvxscq5t5rtnmmy7uhn28sxf3lxle2y4gq4r9pwksr5kfh95vqgqqp3uzyqh7t7x54vmt8vevkak2zj7sg7gfkj0urefhmpwfc058jyvuppah903y0fyvnuffulax4t0hfv3fazspya38dvxp3um590hvantqvfzsu6t",
+      "outputIndex": "0x1",
+      "capacity": "0x4ae0da518",
+      "capacityCkb": "200.99999",
+      "lockMatchesAddress": true,
+      "liveCellStatus": "live"
+    },
+    "feeShannons": "1000",
+    "feeCkb": "0.00001"
+  },
+  "frontend": {
+    "framework": "Next.js",
+    "network": "devnet",
+    "localProductionUrl": "http://127.0.0.1:3000",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "desktopPlaywrightCheck": "passed",
+    "mobilePlaywrightCheck": "passed",
+    "browserConsoleErrors": 0
+  },
+  "portableEvidence": {
+    "path": "campaign-03/proof/rpc-evidence.json",
+    "sha256": "901376a13fff56d0384b1ab111027a4bf4724cd3724083eaf374ffe29fa650c3",
+    "checkCount": 47,
+    "offlineVerifier": "campaign-03/simple-lock-lab/scripts/verify-campaign-03-offline.mjs"
+  },
+  "verification": {
+    "rpcTip": "0x419a",
+    "allChecksPassed": true,
+    "checks": [
+      "Spent deposit cell evidence present",
+      "Recipient cell evidence present",
+      "Change cell evidence present",
+      "Deployment transaction hash",
+      "Deposit transaction hash",
+      "Unlock transaction hash",
+      "Deployment status",
+      "Deposit status",
+      "Unlock status",
+      "Deployment cell-dep transaction",
+      "Deployment cell-dep output index",
+      "Compiled bytecode CKB hash",
+      "Committed deployment output bytecode",
+      "Deposit output count",
+      "Deposit capacity",
+      "Deposit output data",
+      "Deposit hash-lock code hash",
+      "Deposit hash-lock hash type",
+      "Deposit hash-lock args",
+      "Hash-lock preimage hash",
+      "Unlock input count",
+      "Unlock input transaction",
+      "Unlock input output index",
+      "Unlock output count",
+      "Recipient capacity",
+      "Recipient lock code hash",
+      "Recipient lock hash type",
+      "Recipient lock args",
+      "Hash-lock change capacity",
+      "Hash-lock change code hash",
+      "Hash-lock change hash type",
+      "Hash-lock change args",
+      "Recipient output data",
+      "Change output data",
+      "Canonical preimage witness",
+      "Transaction fee",
+      "Spent deposit output status",
+      "Recipient live cell status",
+      "Recipient live cell capacity",
+      "Recipient live cell lock code hash",
+      "Recipient live cell lock hash type",
+      "Recipient live cell lock args",
+      "Change live cell status",
+      "Change live cell capacity",
+      "Change live cell lock code hash",
+      "Change live cell lock hash type",
+      "Change live cell lock args"
+    ],
+    "checkedAt": "2026-07-31T08:40:55.373Z"
+  }
+}

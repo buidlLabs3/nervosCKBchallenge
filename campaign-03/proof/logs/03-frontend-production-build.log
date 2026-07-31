@@ -1,0 +1,29 @@
+Script started on 2026-07-31 11:45:25+03:00 [COMMAND="pnpm --filter frontend build" <not executed on terminal>]
+
+> frontend@0.1.0 build /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab/frontend
+> next build
+
+   ▲ Next.js 15.5.18
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 5.4s
+   Linting and checking validity of types     ✓ Linting and checking validity of types
+   Collecting page data     ✓ Collecting page data
+ ✓ Generating static pages (5/5)
+   Collecting build traces     ✓ Collecting build traces
+   Finalizing page optimization     ✓ Finalizing page optimization
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                     149 kB         250 kB
+└ ○ /_not-found                            995 B         102 kB
++ First Load JS shared by all             101 kB
+  ├ chunks/897-63fd7ae13372c92e.js       45.2 kB
+  ├ chunks/affce599-aef76314bfbf0ff8.js  54.2 kB
+  └ other shared chunks (total)          1.94 kB
+
+
+○  (Static)  prerendered as static content
+
+
+Script done on 2026-07-31 11:45:57+03:00 [COMMAND_EXIT_CODE="0"]

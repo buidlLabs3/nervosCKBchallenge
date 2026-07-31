@@ -72,3 +72,16 @@ Proof folder: [campaign-02-proof](campaign-02-proof/README.md)
 - Stored message decoded from cell data: `buidlLabs3 Campaign 02: this cell carries a small note, and the out point becomes the bookmark.`
 
 The tutorial script is in [nervos-anchor-quest/campaign-02-store-data/store-data-on-cell.mjs](nervos-anchor-quest/campaign-02-store-data/store-data-on-cell.mjs).
+
+## Build on CKB Campaign #03
+
+Campaign #03 completes the official [Build a Simple Lock](https://docs.nervos.org/docs/dapp/simple-lock) tutorial with a custom hash-lock and the required transfer/unlock frontend on local OffCKB devnet.
+
+- [Campaign package](campaign-03/README.md)
+- [Witness Relay implementation](campaign-03/simple-lock-lab/README.md)
+- [Reviewer proof package](campaign-03/proof/README.md)
+- Deployment: `0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc`
+- Deposit: `0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43`
+- Frontend unlock: `0xc40a60c7556272b5cd79d9de13e9dda9b43bb7b5eb2b9f7401b8fe9075399dea`
+
+The wrong preimage was rejected with exit code `11`. The successful unlock sent `99 CKB` to the recipient, retained `200.99999 CKB` in hash-lock change, and paid a `0.00001 CKB` fee.

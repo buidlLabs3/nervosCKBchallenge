@@ -1,0 +1,123 @@
+Script started on 2026-07-31 11:45:24+03:00 [COMMAND="pnpm test:mock" <not executed on terminal>]
+
+> buidllabs3-simple-lock-lab@0.1.0 test:mock /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> jest tests/hash-lock.mock.test.ts --runInBand
+
+[999D[K  console.error
+    Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+
+    > 1 | import {
+        | ^
+      2 |   hexFrom,
+      3 |   Transaction,
+      4 |   hashTypeToBytes,
+
+      at Object.<anonymous> (node_modules/.pnpm/secp256k1@3.8.1/node_modules/secp256k1/index.js:6:13)
+      at Object.<anonymous> (node_modules/.pnpm/bitcoinjs-message@2.2.0/node_modules/bitcoinjs-message/index.js:5:19)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/doge/verify.js:5:29)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/signer/index.js:7:21)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/btc/signerBtc.js:10:20)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/btc/index.js:17:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/signer/index.js:17:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/barrel.js:28:14)
+      at Object.<anonymous> (node_modules/.pnpm/@ckb-ccc+core@1.5.3_typescript@5.8.3/node_modules/@ckb-ccc/core/dist.commonjs/index.js:30:14)
+      at Object.<anonymous> (tests/hash-lock.mock.test.ts:1:1)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [DEBUG] Preimage accepted
+    ║ Run result: 0
+    ║ All cycles: 13120133(12.5M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1880942) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [ERROR] The witness preimage does not match the expected hash
+    ║ Run result: 11
+    ║ All cycles: 13103352(12.5M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1881331) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x780000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0443000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce043db95f123d2464f894f3fd3556fba5914f450093b13b5860c79ba15f76766b03"
+    ║ Script log: [ERROR] The witness lock field must contain a preimage
+    ║ Run result: 10
+    ║ All cycles: 13020379(12.4M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1881458) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+[999D[K  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] hash-lock script loaded: "0x580000001000000030000000310000004c736f2837068630324e09ca3b6b6a7189eddbc36dfe55bad3a762ce1b87d22a0423000000000063c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce04"
+    ║ Script log: [ERROR] Expected 67 argument bytes, received 35
+    ║ Run result: 12
+    ║ All cycles: 12725811(12.1M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║ Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+    ║ (node:1881869) ExperimentalWarning: WASI is an experimental feature and might change at any time
+    ║ (Use `node --trace-warnings ...` to show where the warning was created)
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/.pnpm/ckb-testtool@0.1.4_typescript@5.8.3/node_modules/ckb-testtool/dist.commonjs/unittest/core.js:112:17)
+
+PASS tests/hash-lock.mock.test.ts (20.228 s)
+  hash-lock contract
+    ✓ accepts the exact UTF-8 preimage (3240 ms)
+    ✓ rejects a different preimage with exit code 11 (3872 ms)
+    ✓ rejects an empty witness lock with exit code 10 (3616 ms)
+    ✓ rejects missing hash bytes with exit code 12 (3453 ms)
+
+[999D[KTest Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        20.338 s
+Ran all test suites matching /tests\/hash-lock.mock.test.ts/i.
+
+Script done on 2026-07-31 11:45:45+03:00 [COMMAND_EXIT_CODE="0"]

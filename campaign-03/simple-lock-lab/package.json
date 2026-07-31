@@ -1,0 +1,41 @@
+{
+  "name": "buidllabs3-simple-lock-lab",
+  "version": "0.1.0",
+  "description": "CKB JavaScript Smart Contract project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-all.js",
+    "build:contract": "node scripts/build-contract.js",
+    "test": "node scripts/build-all.js && jest",
+    "test:mock": "jest tests/hash-lock.mock.test.ts --runInBand",
+    "test:devnet": "jest tests/hash-lock.devnet.test.ts --runInBand",
+    "add-contract": "node scripts/add-contract.js",
+    "deploy": "node scripts/build-all.js && node scripts/deploy.js",
+    "clean": "rimraf dist",
+    "format": "prettier --write .",
+    "proof:screenshots": "node scripts/render-proof-screenshots.mjs",
+    "verify:online": "node scripts/verify-campaign-03.mjs",
+    "verify:offline": "node scripts/verify-campaign-03-offline.mjs",
+    "verify:integrity": "sha256sum --check ../proof/SHA256SUMS",
+    "verify:submission": "pnpm build && pnpm test:mock && pnpm --filter frontend typecheck && pnpm --filter frontend build && pnpm verify:offline && pnpm verify:integrity"
+  },
+  "dependencies": {
+    "@ckb-js-std/bindings": "~0.1.0",
+    "@ckb-js-std/core": "~0.1.1",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "@ckb-ccc/core": "~1.5.3",
+    "@types/jest": "~29.5.14",
+    "@types/node": "~22.13.8",
+    "ckb-testtool": "~0.1.1",
+    "esbuild": "~0.25.8",
+    "jest": "~29.7.0",
+    "playwright": "^1.61.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "~29.2.6",
+    "typescript": "~5.8.2"
+  }
+}

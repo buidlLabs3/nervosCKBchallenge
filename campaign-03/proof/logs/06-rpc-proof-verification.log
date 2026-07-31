@@ -1,0 +1,20 @@
+Script started on 2026-07-31 11:40:54+03:00 [COMMAND="pnpm verify:online" <not executed on terminal>]
+
+> buidllabs3-simple-lock-lab@0.1.0 verify:online /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> node scripts/verify-campaign-03.mjs
+
+Secp256k1 bindings are not compiled. Pure JS implementation will be used.
+Build on CKB Campaign 03 - Online Proof Verified
+Checks: 47 independent invariants passed
+Deployment: 0x7ed208e44b0b25b85a23b006f496b3ff7d33aa14a8dfcece46c30e8dda4f48dc (committed)
+Code hash: 0x63c11017f2fc6a559b59d9965bb650a5e823c84da4fe0f29bec2e4e1f43c88ce
+Deposit: 0xeec534f55257885b37ff882aa47177e224c9fbfedacfd5ef898cbab9b1a9dc43 (300 CKB)
+Unlock: 0xc40a60c7556272b5cd79d9de13e9dda9b43bb7b5eb2b9f7401b8fe9075399dea (committed)
+Outputs: 99 CKB recipient / 200.99999 CKB hash-lock change
+Fee: 0.00001 CKB
+RPC tip: 0x419a
+Evidence SHA-256: 901376a13fff56d0384b1ab111027a4bf4724cd3724083eaf374ffe29fa650c3
+Saved: /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/proof/rpc-evidence.json
+Saved: /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/proof/campaign-03-result.json
+
+Script done on 2026-07-31 11:40:55+03:00 [COMMAND_EXIT_CODE="0"]

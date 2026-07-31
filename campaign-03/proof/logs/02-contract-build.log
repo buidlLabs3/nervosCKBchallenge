@@ -1,0 +1,19 @@
+Script started on 2026-07-31 11:44:52+03:00 [COMMAND="pnpm build" <not executed on terminal>]
+
+> buidllabs3-simple-lock-lab@0.1.0 build /home/core/Desktop/CKB/NervosCKBchallenge/campaign-03/simple-lock-lab
+> node scripts/build-all.js
+
+Building 1 contract(s): hash-lock
+
+📦 Building contract: hash-lock
+Building hash-lock from contracts/hash-lock/src/index.ts...
+  📦 Bundling with esbuild...
+  🔧 Compiling to bytecode...
+  ✅ Contract 'hash-lock' built successfully!
+     📄 JavaScript: dist/hash-lock.js
+     🔗 Bytecode: dist/hash-lock.bc
+✅ Successfully built: hash-lock
+
+🎉 All contracts built successfully!
+
+Script done on 2026-07-31 11:44:57+03:00 [COMMAND_EXIT_CODE="0"]
