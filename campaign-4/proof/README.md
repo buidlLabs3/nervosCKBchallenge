@@ -128,4 +128,3 @@ sha256sum sample-dob-image.jpg decoded-dob-testnet.jpg
 | `../create-dob/decoded-dob-testnet.jpg` | Decoded from testnet chain |
 | `../create-dob/create-dob.ts` | Devnet creation script |
 | `../create-dob/testnet-dob.ts` | Testnet creation script |
-| `../reflection.md` | Learning reflection on DOBs vs NFTs |

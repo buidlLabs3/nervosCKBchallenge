@@ -55,7 +55,7 @@ campaign-4/
 │   ├── package.json             # Dependencies
 │   ├── sample-dob-image.jpg     # Input image (295 bytes JPEG)
 │   └── decoded-dob-image.jpg    # Decoded image from chain
-└── reflection.md                # Learning reflection
+└── proof/
 ```
 
 ## How It Works
