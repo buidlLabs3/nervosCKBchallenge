@@ -111,10 +111,18 @@ sha256sum sample-dob-image.jpg decoded-dob-testnet.jpg
 
 ---
 
+## Screenshots
+
+| File | Description |
+|------|-------------|
+| `dob-viewer-screenshot.png` | Browser rendering of on-chain DOB image |
+| `testnet-explorer-screenshot.png` | CKB testnet explorer showing the transaction |
+
 ## Files
 
 | File | Description |
 |------|-------------|
+| `../dob-viewer.html` | Standalone browser viewer for the DOB |
 | `../create-dob/sample-dob-image.jpg` | Original input image |
 | `../create-dob/decoded-dob-image.jpg` | Decoded from devnet chain |
 | `../create-dob/decoded-dob-testnet.jpg` | Decoded from testnet chain |
