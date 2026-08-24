@@ -124,7 +124,10 @@ NETWORK=devnet npm start
 
 ## Resources
 
-- [Spore Protocol Documentation](https://docs.sporeprotocol.com/)
-- [CKB JavaScript VM](https://github.com/nervosnetwork/ckb-js-vm)
+- [Create a DOB Tutorial](https://docs.nervos.org/docs/dapp/create-dob)
+- [DOB Protocol Cookbook](https://github.com/sporeprotocol/dob-cookbook)
+- [Spore Protocol Docs](https://docs.spore.pro/dob/Introduction)
+- [CCC SDK (JavaScript/TypeScript)](https://github.com/ckb-js/ckb-sdk-js)
+- [CCC Documentation](https://docs.nervos.org/docs/sdk-and-devtool/ccc)
+- [OffCKB CLI](https://docs.nervos.org/docs/sdk-and-devtool/offckb)
 - [Nervos CKB Developer Docs](https://docs.nervos.org/)
-- [OffCKB CLI](https://github.com/nervosnetwork/offckb)
