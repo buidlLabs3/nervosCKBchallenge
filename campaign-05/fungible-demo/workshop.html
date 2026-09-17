@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workshop Credits · buidlLabs3</title>
+    <link rel="stylesheet" href="tone.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="mark">W</div>
+      <p class="small">BUILD ON CKB / 05</p>
+      <h1>Workshop<br />Credits</h1>
+      <p>A small xUDT experiment by buidlLabs3.</p>
+      <ol><li>Create a batch</li><li>Find its cells</li><li>Change the holder</li></ol>
+      <div class="network"><span></span> Local OffCKB devnet</div>
+      <p class="foot">The WKC label belongs to this demo. The token is identified on-chain by its xUDT Type Script.</p>
+    </aside>
+    <main>
+      <header><div><p class="small">FUNGIBLE TOKEN LAB</p><h2>One token, different holders.</h2></div><span class="pill">WKC</span></header>
+      <p id="notice" role="status">Start OffCKB, then enter a local test key to create your batch.</p>
+      <div class="steps">
+        <section>
+          <h3><b>01</b> Create</h3>
+          <label for="secret">OffCKB test key</label><input id="secret" type="password" autocomplete="off" placeholder="0x…" />
+          <label for="stock">Batch size</label><input id="stock" inputmode="numeric" value="720" />
+          <button id="make">Create tokens</button>
+          <p class="hint">Amounts are whole units stored in 16 bytes.</p>
+        </section>
+        <section>
+          <h3><b>02</b> Find</h3>
+          <label for="tag">Issuer Lock Script Hash</label><input id="tag" placeholder="0x…" />
+          <button id="find">Find token cells</button>
+          <p class="hint">The hash identifies the issuer. The lookup appends four zero flag bytes to form xUDT args.</p>
+        </section>
+        <section>
+          <h3><b>03</b> Send</h3>
+          <label for="guest">Recipient address</label><input id="guest" placeholder="ckt1…" />
+          <label for="part">Tokens to send</label><input id="part" inputmode="numeric" value="180" />
+          <button id="send" disabled>Send from this batch</button>
+          <p class="hint">The recipient gets a new Lock Script; the Type Script stays the same.</p>
+        </section>
+      </div>
+      <section class="ledger">
+        <div class="row"><h3>Live token cells</h3><span id="tally">No lookup yet</span></div>
+        <div class="table-wrap"><table><thead><tr><th>Amount</th><th>Holder Lock args</th><th>Cell outpoint</th></tr></thead><tbody id="cells"><tr><td colspan="3">Look up the issuer hash to read token cells.</td></tr></tbody></table></div>
+      </section>
+      <section class="receipt">
+        <h3>Committed transactions</h3>
+        <dl><dt>Create</dt><dd id="made">—</dd><dt>Send</dt><dd id="sent">—</dd><dt>Batch split</dt><dd id="split">—</dd><dt>xUDT args</dt><dd id="args">—</dd></dl>
+      </section>
+      <footer>RPC: http://127.0.0.1:28114 · Local transactions do not appear on public explorers.</footer>
+    </main>
+    <script type="module" src="screen.mjs"></script>
+  </body>
+</html>

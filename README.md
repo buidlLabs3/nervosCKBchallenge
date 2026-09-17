@@ -85,3 +85,9 @@ Campaign #03 completes the official [Build a Simple Lock](https://docs.nervos.or
 - Frontend unlock: `0xc40a60c7556272b5cd79d9de13e9dda9b43bb7b5eb2b9f7401b8fe9075399dea`
 
 The wrong preimage was rejected with exit code `11`. The successful unlock sent `99 CKB` to the recipient, retained `200.99999 CKB` in hash-lock change, and paid a `0.00001 CKB` fee.
+
+## Build on CKB Campaign #05
+
+[Workshop Credits](campaign-05/README.md) follows the Create a Fungible Token tutorial with a local xUDT browser app. It creates 720 tokens, queries their cells using the issuer Lock Script Hash, and transfers 180 tokens to a second account while returning 540 in change.
+
+See the [proof package](campaign-05/proof/README.md) for committed local transactions, raw RPC evidence, and separate browser captures of the issued batch and completed transfer. No public-chain deployment is involved.

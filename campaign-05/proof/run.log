@@ -1,0 +1,11 @@
+Workshop Credits / buidlLabs3 / 2026-09-17T04:03:14.707Z
+Network: local OffCKB only (http://127.0.0.1:28114); starting block 285
+Account slots: issuer 12, recipient 13
+Issuer Lock Script Hash: 0x1a357c2198a2ac6e4f514c8b47f502b04cb9d715ec5528a0b3f70df66a7feb6a
+DApp HTTP 200: http://127.0.0.1:1252/workshop.html
+Create committed: 0xc325b01fdaf1f4a5685e3912640254a810d05c2c8ab2f8d279820358253cfd49; amount 720
+Lookup by issuer hash found 1 live cells, including this 720-token batch.
+Send committed: 0x41f8dc6f2eb95b6ddde7644c811d8514e7089513bb37523ebd4e2bfa72557b71; recipient 180, issuer change 540
+RPC checks passed: issue cell consumed; both transfer cells live; Type Script unchanged; recipient Lock Script replaced; batch quantity conserved.
+DApp has no browser errors. Viewport: 1280 × 1050. Screenshots are actual browser captures.
+PASS: Create → issuer-hash lookup → 180-token transfer and 540-token change.

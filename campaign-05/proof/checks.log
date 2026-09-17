@@ -1,0 +1,22 @@
+Validation recorded on 2026-09-17.
+Working directory: campaign-05/fungible-demo
+
+> npm run check
+> buidllabs3-workshop-credits@1.0.0 check
+> node --check chain.mjs && node --check screen.mjs && node --check token-flow.mjs
+Exit code: 0
+
+> npm run build
+> buidllabs3-workshop-credits@1.0.0 build
+> parcel build workshop.html --dist-dir dist --public-url ./
+Building...
+Bundling...
+Packaging & Optimizing...
+Built in 8.64s
+dist/workshop.html              2.8 kB    1.27s
+dist/workshop.9c4f58bd.css     3.36 kB    1.31s
+dist/workshop.aef8dbcd.js     614.8 kB    3.60s
+Exit code: 0
+
+> npm run proof
+Exit code: 0. See run.log for browser interactions and RPC assertions.
