@@ -91,3 +91,7 @@ The wrong preimage was rejected with exit code `11`. The successful unlock sent 
 [Workshop Credits](campaign-05/README.md) follows the Create a Fungible Token tutorial with a local xUDT browser app. It creates 720 tokens, queries their cells using the issuer Lock Script Hash, and transfers 180 tokens to a second account while returning 540 in change.
 
 See the [proof package](campaign-05/proof/README.md) for committed local transactions, raw RPC evidence, and separate browser captures of the issued batch and completed transfer. No public-chain deployment is involved.
+
+## Build on CKB Campaign #06
+
+[Fiber browser payments](campaign-06/README.md) runs a Fiber WASM node, opens a Testnet channel, and sends a keysend payment. The app source and two screenshots are in the campaign folder.
