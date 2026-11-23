@@ -95,3 +95,7 @@ See the [proof package](campaign-05/proof/README.md) for committed local transac
 ## Build on CKB Campaign #06
 
 [Fiber browser payments](campaign-06/README.md) runs a Fiber WASM node, opens a Testnet channel, and sends a keysend payment. The app source and two screenshots are in the campaign folder.
+
+## Build on CKB Campaign #08
+
+[Pay to unlock](campaign-08/README.md) runs two browser nodes, Buyer A and Seller C, each with a 500 CKB Testnet channel to Bottle. The seller encrypts a result with AES-256-GCM and uses the same 32 bytes as the Invoice payment preimage, so the buyer can only decrypt after the 1 CKB payment settles. The README lists what changed from the official starter and the proof captures.
