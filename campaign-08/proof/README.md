@@ -9,6 +9,8 @@ only shown as "yes (32 bytes)".
 Screenshots and `demo.mp4` for the basic quest flow: two nodes, channels,
 liquidity, encrypted offer, lock proof, payment receipt, decrypted result.
 
+Published video: [youtu.be/6ZDsB9fkzBE](https://youtu.be/6ZDsB9fkzBE)
+
 | File | What it shows |
 | --- | --- |
 | `0.png` / `1.png` | Cards before and after starting both nodes |

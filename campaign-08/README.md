@@ -54,7 +54,7 @@ npm run build
 
 ## Demos
 
-- **Basic demo:** screenshots and video in [proof/basic/](proof/basic/)
+- **Basic demo:** [youtu.be/6ZDsB9fkzBE](https://youtu.be/6ZDsB9fkzBE) — screenshots and local copy in [proof/basic/](proof/basic/)
 - **Advanced demo:** [youtube.com/watch?v=JO-0Bx1oYIk](https://www.youtube.com/watch?v=JO-0Bx1oYIk) — frames and local copy in [proof/advance/](proof/advance/)
 
 ## Execution checklist
